@@ -2,7 +2,6 @@ import os
 import base64
 import logging
 import pytz
-from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
@@ -14,27 +13,30 @@ from telegram.ext import (
 )
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from datetime import datetime
 
-# --- 配置 ---
 TOKEN = os.getenv("TOKEN")
 SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+PORT = int(os.getenv("PORT", "8443"))
+WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 TIMEZONE = pytz.timezone("Asia/Singapore")
 
-# 解码环境变量里的Google JSON密钥，写成本地文件
 if "CREDENTIAL_JSON" in os.environ:
     with open("google_credentials.json", "wb") as f:
         f.write(base64.b64decode(os.environ["CREDENTIAL_JSON"]))
 CREDENTIAL_PATH = "./google_credentials.json"
 
-# 设置日志
 logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level=logging.INFO,
 )
 logger = logging.getLogger(__name__)
 
-# Google Sheet 认证
 def get_gsheet_client():
-    creds = ServiceAccountCredentials.from_json_keyfile_name(CREDENTIAL_PATH, ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive'])
+    creds = ServiceAccountCredentials.from_json_keyfile_name(
+        CREDENTIAL_PATH,
+        ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    )
     client = gspread.authorize(creds)
     return client
 
@@ -197,7 +199,11 @@ def main():
     application.add_handler(MessageHandler(filters.COMMAND, unknown))
 
     logger.info("Bot started bossku, tunggu command dari user...")
-    application.run_polling()
+    application.run_webhook(
+        listen="0.0.0.0",
+        port=PORT,
+        webhook_url=WEBHOOK_URL,
+    )
 
 if __name__ == "__main__":
     main()
