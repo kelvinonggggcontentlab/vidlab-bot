@@ -11,5 +11,4 @@ tqdm
 platformdirs
 Click
 numpy
-# ⚠️ 不要直接写 pyscenedetect（Render会找不到）
-# 我们用 git 安装方式
+git+https://github.com/Breakthrough/PySceneDetect.git
