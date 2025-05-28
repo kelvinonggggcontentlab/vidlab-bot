@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+bot.log
+
+# Video output
+*.mp4
+*.mov
+
+# Virtual environments
+venv/
+vidlab_env/
+
+# Secrets
+*.json
+google_credentials.json
+
+# System files
+.DS_Store
+
+# VSCode project files
+.vscode/
+
+# Mac temp files
+*.swp
