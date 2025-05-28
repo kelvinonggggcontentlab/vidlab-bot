@@ -1,0 +1,15 @@
+python-telegram-bot==20.3
+gspread
+oauth2client
+opencv-python
+mediapipe
+moviepy
+ffmpeg-python
+whisper
+pytz
+tqdm
+platformdirs
+Click
+numpy
+# ⚠️ 不要直接写 pyscenedetect（Render会找不到）
+# 我们用 git 安装方式

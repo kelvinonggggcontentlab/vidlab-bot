@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vidlab-marketing-460409",
+  "private_key_id": "f0e918ae72e2f98706d6f7c0d71ce986ae8fa576",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvaSxgK4jK3nRG\nrYcZVrearNesOScwpW6V++Lj0yOLbLudM0Sr7e0Qb84vREnGnFvWasrJLaZj64+0\nw/pzjrKYDzY8IROPuMBUEf68PBZir57APNB8X03tqdMRqr2MJjlG+KtNtmCvQ17D\nOemoIOxADnV2G6awlveoCPpSqnuBrPfqTCppNctAQP28BKCrRbUz9Qy71ItbYquA\nlEB01EbMGzAv0sMku8s08uwNM4gUW+h6lGmSKp9bAodJssJVGx7Y1jE7RAL0xJ4V\nHgwCQkRPI3A196Mw85FvVpvA9E7T/Lh5roA7sg6V2H2r2pXFR6xk5p/2X6VoC214\nWi7G7V7PAgMBAAECggEACXqOPhrRePsxEK2Qh+s4tPBBdRa0qje9cNtm5sj+1pwK\nzEGKa+QChdCGpzqOrSa/b0Rt2RXfbO6f4ULmTTsuezlLqGvu7XPXIazEJ0ss1LkI\n/MFFbRhxxJk776U+ASKta662yw9DIgcx2A/7MyZRoXefcRaMUfSUtv7X3km2ki49\n8KhESJkm8jor85XlJAIiAEZaaw7SjgWl9DiWGj1xjQcR7vxf5E2kZVPoOzFbGspG\nf34JqajbsvRz2nnhD1748aPG7io84ZlWuS4d9bLJEK7NNYAwNEODRV4DXf5gBJiA\nckNBuq/rE/oxTRJ157DlxD45VUHK0MNnk5/tiYb88QKBgQDqQfsXtJ4OtMylXYt3\naxjTbqRxHGz+gRtJPvXrB7TzNjwI1xdjXXAx+qQlhiHBJxQ3f2RFC6wBDBadkQ/T\nD6G7T2zWKTocL/ulxtqAaP93ucMqM6VXvfc+5sjQYiau4FFxr87kh8u8q4Th3X2u\nbCrss31I8OB2ujP5r0rusKGMNwKBgQC/sPnmPBM2GpcN173afTKj3RyfqkUxmQFS\nz/wO8WqFHbfXKQxqpRKyyZEDnm6QWxSYhl2n+Qw38o9gId+Vsqg7Z8lDaamOROrw\nAu2oivdv5NhVcMd8LZIN3Iv5bLNwp3sz4/l0k1LjRImBqMZfNoBLgHMpU1MdPerl\noIjPIlBmKQKBgCxYLSYBpOH3y72KBbqnZV2w1iQrU16iJf4pkvfYz6IypA6wWNcQ\newqa/bO0vnMH6MXQsbR4TykrlqRhL3Ouw9jnYhzwVPW9B5AMIpSoS6PoYE9+00/W\nwBUCLwVzbwsvn3s74phUNHcUqOTwvrfj9gQ0vgSuxG71NJ2RV0fz28DlAoGALCMh\nx0N54PFKaqOMUWyWZmiZGKJqADuMtHazQPWRY0kudVo8Q6nynjwPKdgm+RIfsebu\nVajgiVlObgIeqydR2SvSibUgl2OC/PSPqEknJBp7PWEUbaFIieyIRkwjHQNTOOV7\nIL5zTWUQjExCMNYpwDi5S4CmGIuTNIA8QAVUodECgYEAkpB3X8V7WzOzsB+07U1+\nkpXVttiXOUD/y+MhuXmoMhe33UaFQGSPO13r0pem19LSnhsScY4wT/PZSgxLbUxh\n7fO+833+PS4Hbn+FE5cK8D9Kg6+ZqhQWpPYyfSKVKtLQziU4JzUfISr7+rspYOU6\nOHJUYIP5k2yQ1oiffjRSzCY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vidlab-marketing@vidlab-marketing-460409.iam.gserviceaccount.com",
+  "client_id": "114330571916217546237",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vidlab-marketing%40vidlab-marketing-460409.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
